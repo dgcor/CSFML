@@ -42,11 +42,13 @@
 ////////////////////////////////////////////////////////////
 typedef enum
 {
-    sfTextRegular       = 0,      ///< Regular characters, no style
-    sfTextBold          = 1 << 0, ///< Bold characters
-    sfTextItalic        = 1 << 1, ///< Italic characters
-    sfTextUnderlined    = 1 << 2, ///< Underlined characters
-    sfTextStrikeThrough = 1 << 3  ///< Strike through characters
+    sfTextRegular               = 0,      ///< Regular characters, no style
+    sfTextBold                  = 1 << 0, ///< Bold characters
+    sfTextItalic                = 1 << 1, ///< Italic characters
+    sfTextUnderlined            = 1 << 2, ///< Underlined characters
+    sfTextStrikeThrough         = 1 << 3  ///< Strike through characters
+    sfTextHorizontalAlignCenter = 1 << 4  ///< CenterAlign text
+    sfTextHorizontalAlignRight  = 1 << 5  ///< RightAlign text
 } sfTextStyle;
 
 
@@ -378,6 +380,8 @@ CSFML_GRAPHICS_API void sfText_setOutlineColor(sfText* text, sfColor color);
 ///
 ////////////////////////////////////////////////////////////
 CSFML_GRAPHICS_API void sfText_setOutlineThickness(sfText* text, float thickness);
+
+CSFML_GRAPHICS_API sfUint32 sfText_getLineCount(const sfText* text);
 
 ////////////////////////////////////////////////////////////
 /// \brief Get the string of a text (returns an ANSI string)

@@ -259,6 +259,13 @@ void sfText_setOutlineThickness(sfText* text, float thickness)
 
 
 ////////////////////////////////////////////////////////////
+sfUint32 sfText_getLineCount(const sfText* text)
+{
+    CSFML_CALL_RETURN(text, getLineCount(), 0);
+}
+
+
+////////////////////////////////////////////////////////////
 const char* sfText_getString(const sfText* text)
 {
     CSFML_CHECK_RETURN(text, NULL);
