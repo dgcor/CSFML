@@ -40,8 +40,8 @@ jobs:
             - name: Checkout SFML
               uses: actions/checkout@v4
               with:
-                  repository: SFML/SFML
-                  ref: 2.6.1
+                  repository: dgcor/SFML
+                  ref: feature/right-align-text
                   path: SFML
 
             - name: Checkout CSFML
@@ -127,8 +127,8 @@ jobs:
             - name: Checkout SFML
               uses: actions/checkout@v4
               with:
-                  repository: SFML/SFML
-                  ref: 2.6.1
+                  repository: dgcor/SFML
+                  ref: feature/right-align-text
                   path: SFML
 
             - name: Checkout CSFML
@@ -196,8 +196,8 @@ jobs:
             - name: Checkout SFML
               uses: actions/checkout@v4
               with:
-                  repository: SFML/SFML
-                  ref: 2.6.1
+                  repository: dgcor/SFML
+                  ref: feature/right-align-text
                   path: SFML
 
             - name: Checkout CSFML
@@ -260,8 +260,8 @@ jobs:
             - name: Checkout SFML
               uses: actions/checkout@v4
               with:
-                  repository: SFML/SFML
-                  ref: 2.6.1
+                  repository: dgcor/SFML
+                  ref: feature/right-align-text
                   path: SFML
 
             - name: Checkout CSFML
