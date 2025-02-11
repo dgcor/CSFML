@@ -1,13 +1,18 @@
 name: CI
 
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron:  '15 9 * * 2'
 
 concurrency:
   group: environment-${{github.ref}}
   cancel-in-progress: true
 
 env:
-  SFML_VERSION: 3.0.0
+  SFML_VERSION: master
 
 defaults:
   run:
