@@ -46,8 +46,8 @@ typedef enum
     sfTextBold                  = 1 << 0, ///< Bold characters
     sfTextItalic                = 1 << 1, ///< Italic characters
     sfTextUnderlined            = 1 << 2, ///< Underlined characters
-    sfTextStrikeThrough         = 1 << 3  ///< Strike through characters
-    sfTextHorizontalAlignCenter = 1 << 4  ///< CenterAlign text
+    sfTextStrikeThrough         = 1 << 3, ///< Strike through characters
+    sfTextHorizontalAlignCenter = 1 << 4, ///< CenterAlign text
     sfTextHorizontalAlignRight  = 1 << 5  ///< RightAlign text
 } sfTextStyle;
 
