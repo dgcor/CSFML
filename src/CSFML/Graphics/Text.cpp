@@ -251,6 +251,14 @@ void sfText_setOutlineThickness(sfText* text, float thickness)
 
 
 ////////////////////////////////////////////////////////////
+uint32_t sfText_getLineCount(const sfText* text)
+{
+    assert(text);
+    return text->getLineCount();
+}
+
+
+////////////////////////////////////////////////////////////
 const char* sfText_getString(const sfText* text)
 {
     assert(text);

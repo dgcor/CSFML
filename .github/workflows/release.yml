@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  SFML_VERSION: 3.0.2
+  SFML_VERSION: feature/right-align-text-3
 
 jobs:
   windows-x86:
@@ -43,7 +43,7 @@ jobs:
       - name: Checkout SFML
         uses: actions/checkout@v6
         with:
-          repository: SFML/SFML
+          repository: dgcor/SFML
           ref: ${{ env.SFML_VERSION }}
           path: SFML
 
@@ -130,7 +130,7 @@ jobs:
       - name: Checkout SFML
         uses: actions/checkout@v6
         with:
-          repository: SFML/SFML
+          repository: dgcor/SFML
           ref: ${{ env.SFML_VERSION }}
           path: SFML
 
@@ -199,7 +199,7 @@ jobs:
       - name: Checkout SFML
         uses: actions/checkout@v6
         with:
-          repository: SFML/SFML
+          repository: dgcor/SFML
           ref: ${{ env.SFML_VERSION }}
           path: SFML
 
@@ -238,7 +238,7 @@ jobs:
       - name: Checkout SFML
         uses: actions/checkout@v6
         with:
-          repository: SFML/SFML
+          repository: dgcor/SFML
           ref: ${{ env.SFML_VERSION }}
           path: SFML
 
@@ -301,7 +301,7 @@ jobs:
       - name: Checkout SFML
         uses: actions/checkout@v6
         with:
-          repository: SFML/SFML
+          repository: dgcor/SFML
           ref: ${{ env.SFML_VERSION }}
           path: SFML
 

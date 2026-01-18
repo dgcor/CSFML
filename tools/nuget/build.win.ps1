@@ -43,7 +43,7 @@ Write-Output "Building $RID"
 Write-Output "Using $Generator as the cmake generator"
 Write-Output "Using architecture $ArchitectureCMake"
 
-$SFMLBranch = "3.0.2" # The branch or tag of the SFML repository to be cloned
+$SFMLBranch = "feature/right-align-text-3" # The branch or tag of the SFML repository to be cloned
 $CSFMLDir = (Get-Item (git rev-parse --show-toplevel)).FullName # The directory of the source code of CSFML
 
 $OutDir = "./CSFML/runtimes/$RID/native" # The directory of all CSFML modules, used to copy the final dlls
@@ -83,7 +83,7 @@ If (-not (Test-Path "SFML/.git")) {
     Write-Output "Cloning SFML"
     Remove-Item -Recurse -Force -ErrorAction Ignore "SFML" > $null
 
-    git clone --branch "$SFMLBranch" --depth 1 "https://github.com/SFML/SFML.git" "SFML"
+    git clone --branch "$SFMLBranch" --depth 1 "https://github.com/dgcor/SFML.git" "SFML"
     Ensure-Success
 }
 

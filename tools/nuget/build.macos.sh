@@ -46,7 +46,7 @@ echo "Please note that all SFML dependencies must be installed and available to 
 
 RID="$1"
 
-SFMLBranch="3.0.2" # The branch or tag of the SFML repository to be cloned
+SFMLBranch="feature/right-align-text-3" # The branch or tag of the SFML repository to be cloned
 CSFMLDir="$(grealpath "$(git rev-parse --show-toplevel)")" # The directory of the source code of CSFML
 
 OutDir="./CSFML/runtimes/$RID/native" # The base directory of all CSFML modules, used to copy the final libraries
@@ -65,7 +65,7 @@ pushd "Build"
 if [[ ! -d "SFML/.git" ]]; then
     echo "Cloning SFML"
     rm -rf "SFML"
-    git clone --branch "$SFMLBranch" --depth 1 "https://github.com/SFML/SFML.git" "SFML"
+    git clone --branch "$SFMLBranch" --depth 1 "https://github.com/dgcor/SFML.git" "SFML"
 fi
 
 SFMLDir="$(grealpath SFML)"
